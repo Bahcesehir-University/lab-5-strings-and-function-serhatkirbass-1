@@ -129,7 +129,7 @@ MyString MyString::substring(int start, int len) const {
     if(start<0|| start >= static_cast<int>(data.length())){
         throw out_of_range("");
 }
-    return MyString(data.substr(start, data.length()));
+    return MyString(data.substr(start, len));
 }
 
 // ---- String Manipulation ----
